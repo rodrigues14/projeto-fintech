@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login {
+    width: 100vw;
+    height: 100vh;
+    background-color: #2E768C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left h1 {
+    color: #F5F5F5;
+    font-size: 4vh;
+    
+}
+
+.left > h2 {
+    font-size: 3vh;
+    color: #F5F5F5;
+    margin-left: 10px;
+}
+
+.left img {
+    width: 35vw;
+}
+
+.right {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 35px;
+    background: #40879c;
+    border-radius: 15px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.caixa > h2 {
+    color: #F8F8F8;
+    font-weight: 800;
+    margin: 0;
+}
+
+.caixa-texto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.caixa-texto > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #5198ad;
+    color: #f0ffffde;
+    font-size: 12pt;
+    outline: none;
+}
+
+.caixa-texto > label {
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+.caixa-texto > input::placeholder {
+    color: #f0ffff94;
+}
+
+.lembre-me {
+    color: #f0ffffde;
+    position: left;
+}
+
+.btn-entrar {
+    font-size: 14px;
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    margin-bottom: 6px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-weight: 700;
+    color:#2E768C;
+    background-color: #F8F8F8;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px -12px #F5F5F5;
+}
+
+.rec-senha {
+    text-decoration: none;
+    color: #f0ffffde;
+}
+
+.ou {
+    color: #f0ffffde;
+    margin: 15px 0 4px;
+}
+
+.face-google button {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border-radius: 8px;
+    border: none;
+    color: #f0ffffde;
+    box-shadow: 0px 10px 40px #00000056;
+    cursor: pointer;
+}
+
+.face {
+    background-color: #4267B2;
+}
+
+.google {
+    background-color: #DB4437;
+}
+
+.face-google button i {
+    color: #F5F5F5;
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.cadastro {
+    font-size: 10pt;
+    color: #F5F5F5;
+}
+
+
+@media only screen and (max-width: 950px) {
+    .caixa {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+
+    .right {
+        width: 100%;
+        height: auto;
+    }
+
+    .caixa {
+        width: 90%;
+    }
+
+    .login {
+        flex-direction: column;
+    }
+
+    .left {
+        display: none;
+    }
+    
+
+}
+
